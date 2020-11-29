@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+/* PÁGINA NOIVAS */
+.container{     
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.eu{
+  display: none;
+}
+h1{       
+  font-size: clamp(1rem, 10vw, 4rem);
+  margin-top: 0;  
+  text-align: center;
+  text-transform: uppercase;
+}
+.studio {  
+  padding: 30px;  
+  display: grid;  
+  background: transparent;  
+  grid-template-columns: 50%;
+  grid-template-areas: "photo text";
+}
+
+.studio .photo-new {
+  grid-area: photo;
+  width: 100%;
+}
+.studio .photo-new-1 {
+  margin: 0 auto;
+  grid-area: text;
+  width: 70%;
+}
+.studio .photo-new-2 {
+  grid-area: photo;
+  width: 80%;
+}
+
+.studio .texto1 {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  grid-area: text;
+  font-size: clamp(1rem, 1vw, 4rem);  
+}
+
+.studio .texto2 {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  grid-area: photo;
+  font-size: clamp(1rem, 1vw, 4rem);  
+}
+
+.studio .texto3 {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  grid-area: text;
+  font-size: clamp(1rem, 1vw, 4rem);  
+}
+
+/* MOBILE */
+@media (max-width: 800px){
+  /* CONTEUDO */
+  .studio {
+    padding: 10px;  
+    display: flex;  
+    flex-direction: column;            
+  }
+  .studio .pstudio {    
+    width: 100%;
+  }  
+  
+  .studio .texto1 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+  
+  .studio .texto2 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+  
+  .studio .texto3 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+}
+

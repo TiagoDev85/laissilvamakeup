@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+/* PÁGINA NOIVAS */
+.container{     
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.eu{
+  display: none;
+}
+h1{       
+  font-size: clamp(1rem, 10vw, 4rem);
+  margin-top: 0;  
+  text-align: center;
+  text-transform: uppercase;
+}
+.projetos {  
+  padding: 30px;  
+  display: grid;  
+  background: transparent;  
+  grid-template-columns: 50%;
+  grid-template-areas: "photo text";
+}
+
+.projetos .photo-new {
+  grid-area: photo;
+  width: 100%;
+}
+.projetos .photo-new-1 {
+  margin: 0 auto;
+  grid-area: text;
+  width: 70%;
+}
+.projetos .photo-new-2 {
+  grid-area: photo;
+  width: 80%;
+}
+.projetos .photo-new-3 {
+  grid-area: text;
+  width: 80%;
+}
+
+.projetos .texto1 {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  grid-area: text;
+  font-size: clamp(1rem, 1vw, 4rem);  
+}
+
+.projetos .texto2 {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  grid-area: photo;
+  font-size: clamp(1rem, 1vw, 4rem);  
+}
+
+.projetos .texto3 {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  grid-area: text;
+  font-size: clamp(1rem, 1vw, 4rem);  
+}
+.projetos .texto4 {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  grid-area: photo;
+  font-size: clamp(1rem, 1vw, 4rem);  
+}
+
+/* MOBILE */
+@media (max-width: 800px){
+  /* CONTEUDO */
+  .projetos {
+    padding: 10px;  
+    display: flex;  
+    flex-direction: column;            
+  }
+  .projetos .pprojetos {    
+    width: 100%;
+  }  
+  
+  .projetos .texto1 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+  
+  .projetos .texto2 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+  
+  .projetos .texto3 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+  .projetos .texto4 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+}
+

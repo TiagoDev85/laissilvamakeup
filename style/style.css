@@ -1,0 +1,138 @@
+@import "http://fonts.googleapis.com/icon?family=Material+Icons";
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+body {
+  background: linear-gradient(#000, #fff);
+}
+
+/* EFEITO */
+@keyframes surgir{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 50%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+.container {  
+  background: #fff;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  animation: surgir .6s linear;
+}
+.eu{
+  font-size: clamp(1rem, 10vw, 4rem);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* CONTEUDO INDEX */
+
+.sobre {   
+  width: 100%;
+  padding: 20px;  
+}
+
+.sobre .imagem-sobre {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-areas: "imgsobre textosobre";
+  justify-items: center;
+}
+.sobre .imagem-sobre .imgsobre{
+  width: 80%;
+  /* border-radius: 20%; */
+  grid-area: imgsobre;  
+}
+.sobre .sobre-text {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  grid-area: textosobre;
+  text-align: justify;  
+}
+.sobre .sobre-text p{
+  text-indent: 30px;
+  font-size: clamp(1rem, 1vw, 4rem);
+}
+
+/* NAV BAR MENU */
+
+.navbar-fixed nav {  
+  background: #fff;
+  border-bottom: 1px solid #000;
+  /* background: linear-gradient(#ee6e73, #80319c); */
+  display: grid;
+  align-content: center;
+  padding: 10px;
+}
+.right{
+  margin-right: 5%;
+}
+.right li a{
+  color: #000;
+}
+.navbar-fixed nav .brand-logo{
+  margin-left: 5%;
+  color: #000;
+  font-size: clamp(1rem, 2vw, 8rem);
+}
+
+/* SIDE BAR e MOBILE */
+@media (max-width: 800px){   
+  /* LOGO */
+  .navbar-fixed nav .brand-logo{
+    margin-left: 0;
+    font-size: clamp(1rem, 5vw, 8rem);
+  }
+  /* MENU */
+  .sidenav {  
+    width: 70%; 
+    height: 100vh;     
+    opacity: 95% !important;    
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 50px;    
+    background: linear-gradient(#000, #fff);    
+  }   
+  
+  .sidenav li {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 90%;
+  }
+  .sidenav li a{        
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 8rem);
+    color: #fff !important;
+  }
+  .sidenav-overlay {
+    display: none !important;
+    opacity: 0% !important;
+  }
+  .sidenav-trigger{
+    color: #000;
+  }
+
+  /* CONTEUDO */
+  .sobre{    
+    padding: 0;
+  }
+  .sobre .imagem-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sobre .imagem-sobre .imgsobre{
+    width: 70%;
+  }
+  .sobre .imagem-sobre .sobre-text{
+    text-align: justify;
+  }
+}

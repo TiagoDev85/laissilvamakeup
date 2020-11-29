@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* PÁGINA NOIVAS */
+.container{    
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px; 
+}
+.eu{
+  display: none;
+}
+h1{    
+  font-size: clamp(1rem, 10vw, 4rem);
+  margin-top: 0;  
+  text-align: center;
+  text-transform: uppercase;
+}
+.noivas {
+  padding: 30px;  
+  display: grid;  
+  background: transparent;  
+  grid-template-columns: 50%;
+  grid-template-areas: "photo text";  
+}
+
+.noivas .photo-new {
+  grid-area: photo;
+  width: 100%;
+}
+.noivas .photo-new-1 {
+  margin: 0 auto;
+  grid-area: text;
+  width: 70%;
+}
+.noivas .photo-new-2 {
+  grid-area: photo;
+  width: 80%;
+}
+
+.noivas .texto1 {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  grid-area: text;
+  font-size: clamp(1rem, 1vw, 4rem);  
+}
+
+.noivas .texto2 {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  grid-area: photo;
+  font-size: clamp(1rem, 1vw, 4rem);  
+}
+
+.noivas .texto3 {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  grid-area: text;
+  font-size: clamp(1rem, 1vw, 4rem);  
+}
+
+/* MOBILE */
+@media (max-width: 800px){
+  /* CONTEUDO */
+  .noivas {
+    padding: 10px;  
+    display: flex;  
+    flex-direction: column;            
+  }
+  .noivas .photo {    
+    width: 100%;
+  }  
+  
+  .noivas .texto1 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+  
+  .noivas .texto2 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+  
+  .noivas .texto3 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+}
+
